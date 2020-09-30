@@ -10028,7 +10028,7 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 2rem 0;
 }
 
 #mainNav {
@@ -10121,7 +10121,7 @@ header.masthead h1 {
 }
 @media (min-width: 1200px) {
   header.masthead h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
