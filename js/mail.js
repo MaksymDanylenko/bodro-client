@@ -2,6 +2,12 @@ $('#emailForm').submit(function(e) {
 
     e.preventDefault()
 
+    $('#emailInput').prop('disabled', true)
+    $('#nameInput').prop('disabled', true)
+    $('#subjectInput').prop('disabled', true)
+    $('#messageInput').prop('disabled', true)
+    $('#submitInput').prop('disabled', true)
+
     var emailMessage = {
         email: $('#emailInput').val(),
         name: $('#nameInput').val(),
@@ -17,6 +23,7 @@ $('#emailForm').submit(function(e) {
         dataType: 'json',
         success: function(data) {
             alert('Сообщение отправлено!')
+
             $('#emailInput').val('')
             $('#nameInput').val('')
             $('#subjectInput').val('')
@@ -24,6 +31,13 @@ $('#emailForm').submit(function(e) {
         },
         error: function(errMsg) {
             alert('Ошибка при отправке сообщения!')
+        },
+        complete: function() {
+        	$('#emailInput').prop('disabled', false)
+            $('#nameInput').prop('disabled', false)
+            $('#subjectInput').prop('disabled', false)
+            $('#messageInput').prop('disabled', false)
+            $('#submitInput').prop('disabled', false)
         }
     })
 });

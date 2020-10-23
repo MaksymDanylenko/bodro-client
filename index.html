@@ -105,6 +105,7 @@
         </div>
     </section>
     <!-- Portfolio-->
+    <!--
     <div id="portfolio">
         <div class="container-fluid p-0">
             <div class="row no-gutters">
@@ -141,6 +142,7 @@
             </div>
         </div>
     </div>
+-->
     <!-- Services-->
     <section class="page-section bg-primary" id="services">
         <div class="container">
@@ -183,7 +185,6 @@
                     <ul class="text-left">
                         <li>Консультация и обучение по типовым конфигурациям 1С (Управление Торговлей, Управление Торговым Предприятием, Управление Производственным Предприятием, Бухгалтерия для Украины, Розница для Украины)</li>
                     </ul>
-                    <!--p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p-->
                 </div>
             </div>
         </div>
@@ -213,31 +214,28 @@
                     <div>Украина, г. Винница</div>
                 </div>
             </div>
-
             <h2 class="mt-4 mb-4 text-center">Обратная связь</h2>
-
             <form id="emailForm">
                 <div class="form-group col-md-6">
                     <label for="emailInput">Ваша почта</label>
-                    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="nameInput">Ваше имя</label>
-                    <input type="text" class="form-control" id="nameInput" placeholder="Имя">
+                    <input type="text" class="form-control" id="nameInput" placeholder="Имя" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="subjectInput">Тема</label>
-                    <input type="text" class="form-control" id="subjectInput" placeholder="Тема">
+                    <input type="text" class="form-control" id="subjectInput" placeholder="Тема" required>
                 </div>
                 <div class="form-group col-md-12">
                     <label for="messageInput">Сообщение</label>
-                    <textarea class="form-control" id="messageInput" placeholder="Сообщение" rows="10"></textarea>
+                    <textarea class="form-control" id="messageInput" placeholder="Сообщение" rows="10" required></textarea>
                 </div>
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary btn-xl">Отправить</button>
+                    <button type="submit" id="submitInput" class="btn btn-primary btn-xl">Отправить</button>
                 </div>
             </form>
-
         </div>
     </section>
     <!-- Footer-->
